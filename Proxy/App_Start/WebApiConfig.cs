@@ -16,7 +16,7 @@ namespace Proxy
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/url={url}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
